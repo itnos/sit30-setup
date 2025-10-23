@@ -1,7 +1,7 @@
 #!/bin/bash
 # scripts/sit30-install.sh
 # Быстрая установка sit30 стека на чистый сервер
-# Использование: curl -fsSL https://raw.githubusercontent.com/codeitnos/sit30-server-stack/master/scripts/sit30-install.sh | bash
+# Использование: curl -fsSL https://raw.githubusercontent.com/codeitnos/sit30-setup/refs/heads/master/sit30-install.sh | bash
 
 set -e
 
@@ -52,13 +52,13 @@ if [ -z "$SITE_DIR" ]; then
     echo -e "  ${CYAN}$0 --site-dir=/path/to/site${NC}"
     echo ""
     echo -e "${YELLOW}Пример:${NC}"
-    echo -e "  ${CYAN}$0 --site-dir=/var/www/sit30.net${NC}"
+    echo -e "  ${CYAN}$0 --site-dir=/var/www/site/sit30.net${NC}"
     echo ""
     echo -e "${YELLOW}С дополнительными параметрами:${NC}"
     echo -e "  ${CYAN}$0 --site-dir=/var/www/mysite --stack-dir=/opt/my-stack --data-dir=/opt/my-data${NC}"
     echo ""
     echo -e "${YELLOW}Через curl:${NC}"
-    echo -e "  ${CYAN}curl -fsSL https://raw.githubusercontent.com/codeitnos/sit30-server-stack/master/scripts/sit30-install.sh | bash -s -- --site-dir=/var/www/sit30.net${NC}"
+    echo -e "  ${CYAN}curl -fsSL https://raw.githubusercontent.com/codeitnos/sit30-setup/refs/heads/master/sit30-install.sh | bash -s -- --site-dir=/var/www/site/sit30.net${NC}"
     echo ""
     echo -e "${YELLOW}Примечание:${NC}"
     echo -e "  DATA_DIR (по умолчанию /opt/sit30-data) - для секретов, бэкапов, SSL"
