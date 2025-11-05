@@ -7,7 +7,7 @@
 Для установки стека выполните команду:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/codeitnos/sit30-setup/refs/heads/master/sit30-install.sh | bash -s -- --site-dir=/var/www/site/sit30.net
+curl -fsSL https://raw.githubusercontent.com/itnos/sit30-setup/refs/heads/master/sit30-install.sh | bash -s -- --site-dir=/var/www/site/sit30.net
 ```
 
 **Обязательный параметр:**
@@ -30,13 +30,13 @@ curl -fsSL https://raw.githubusercontent.com/codeitnos/sit30-setup/refs/heads/ma
 ### Базовая установка
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/codeitnos/sit30-setup/refs/heads/master/sit30-install.sh | bash -s -- --site-dir=/var/www/site/sit30.net
+curl -fsSL https://raw.githubusercontent.com/itnos/sit30-setup/refs/heads/master/sit30-install.sh | bash -s -- --site-dir=/var/www/site/sit30.net
 ```
 
 ### Установка с пользовательскими путями
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/codeitnos/sit30-setup/refs/heads/master/sit30-install.sh | bash -s -- \
+curl -fsSL https://raw.githubusercontent.com/itnos/sit30-setup/refs/heads/master/sit30-install.sh | bash -s -- \
   --site-dir=/var/www/mysite \
   --stack-dir=/opt/my-stack \
   --data-dir=/opt/my-data
@@ -80,11 +80,11 @@ chmod +x sit30-install.sh
 После установки скрипт выведет два публичных ключа, которые нужно добавить в GitHub:
 
 **Для репозитория sit30-server-stack:**
-- Перейти: https://github.com/codeitnos/sit30-server-stack/settings/keys/new
+- Перейти: https://github.com/itnos/sit30-server-stack/settings/keys/new
 - Добавить публичный ключ из вывода скрипта
 
 **Для репозитория sit30_site_new:**
-- Перейти: https://github.com/codeitnos/sit30_site_new/settings/keys/new
+- Перейти: https://github.com/itnos/sit30_site_new/settings/keys/new
 - Добавить публичный ключ из вывода скрипта
 
 ### 2. Настроить .env файл

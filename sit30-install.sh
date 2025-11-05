@@ -1,7 +1,7 @@
 #!/bin/bash
 # scripts/sit30-install.sh
 # Быстрая установка sit30 стека на чистый сервер
-# Использование: curl -fsSL https://raw.githubusercontent.com/codeitnos/sit30-setup/refs/heads/master/sit30-install.sh | bash
+# Использование: curl -fsSL https://raw.githubusercontent.com/itnos/sit30-setup/refs/heads/master/sit30-install.sh | bash
 
 set -e
 
@@ -14,8 +14,8 @@ CYAN='\033[0;36m'
 NC='\033[0m' # No Color
 
 # Конфигурация по умолчанию
-STACK_REPO="git@github.com:codeitnos/sit30-server-stack.git"
-SITE_REPO="git@github.com:codeitnos/sit30_site_new.git"
+STACK_REPO="git@github.com:itnos/sit30-server-stack.git"
+SITE_REPO="git@github.com:itnos/sit30_site_new.git"
 STACK_DIR="/opt/sit30-server-stack"
 SITE_DIR=""
 DATA_DIR="/opt/sit30-data"
@@ -58,7 +58,7 @@ if [ -z "$SITE_DIR" ]; then
     echo -e "  ${CYAN}$0 --site-dir=/var/www/mysite --stack-dir=/opt/my-stack --data-dir=/opt/my-data${NC}"
     echo ""
     echo -e "${YELLOW}Через curl:${NC}"
-    echo -e "  ${CYAN}curl -fsSL https://raw.githubusercontent.com/codeitnos/sit30-setup/refs/heads/master/sit30-install.sh | bash -s -- --site-dir=/var/www/site/sit30.net${NC}"
+    echo -e "  ${CYAN}curl -fsSL https://raw.githubusercontent.com/itnos/sit30-setup/refs/heads/master/sit30-install.sh | bash -s -- --site-dir=/var/www/site/sit30.net${NC}"
     echo ""
     echo -e "${YELLOW}Примечание:${NC}"
     echo -e "  DATA_DIR (по умолчанию /opt/sit30-data) - для секретов, бэкапов, SSL"
@@ -303,7 +303,7 @@ echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━�
 echo ""
 
 echo -e "${CYAN}1. Для репозитория sit30-server-stack:${NC}"
-echo -e "   ${BLUE}https://github.com/codeitnos/sit30-server-stack/settings/keys/new${NC}"
+echo -e "   ${BLUE}https://github.com/itnos/sit30-server-stack/settings/keys/new${NC}"
 echo ""
 echo -e "   ${GREEN}Title:${NC} Production Server $(hostname)"
 echo -e "   ${GREEN}Key:${NC}"
@@ -314,7 +314,7 @@ echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━�
 echo ""
 
 echo -e "${CYAN}2. Для репозитория sit30_site_new:${NC}"
-echo -e "   ${BLUE}https://github.com/codeitnos/sit30_site_new/settings/keys/new${NC}"
+echo -e "   ${BLUE}https://github.com/itnos/sit30_site_new/settings/keys/new${NC}"
 echo ""
 echo -e "   ${GREEN}Title:${NC} Production Server $(hostname)"
 echo -e "   ${GREEN}Key:${NC}"
